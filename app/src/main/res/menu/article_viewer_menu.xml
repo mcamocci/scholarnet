@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="datacollect.k15.com.datacollect.MainActivity">
+
+    <item
+        android:id="@+id/recommend_ic"
+        android:orderInCategory="100"
+        android:title="recommend"
+        android:icon="@drawable/recommendicon"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/comment_ic"
+        android:orderInCategory="100"
+        android:title="comment"
+        android:icon="@drawable/ic_action_monolog"
+        app:showAsAction="always" />
+
+
+</menu>

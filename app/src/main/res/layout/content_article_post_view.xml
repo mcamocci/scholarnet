@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+      >
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_replaced_list"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:foregroundGravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</LinearLayout>

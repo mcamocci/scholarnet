@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.ShareActivity"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="2dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/written_article"
+                android:hint="what are you uploading?"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#000"
+                android:text="Click bellow to pick file for upload (Document)"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/commondark"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            app:cardCornerRadius="6dp"
+                            android:layout_height="wrap_content">
+                         <ImageView
+                             android:layout_width="75dp"
+                             android:id="@+id/image_select_one"
+                             android:src="@drawable/ic_action_attachment"
+                             android:background="#000"
+                             android:layout_height="75dp" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

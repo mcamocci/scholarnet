@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="scholarnet.haikaroselab.com.scholarnet">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.ScholarSplashActivity"
+            android:label="scholarnet"
+            android:screenOrientation="portrait"
+            android:theme="@style/clean">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivityFine"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AmazingActivity"
+            android:label="POST VIEWER"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".beaPackage.ModulePostActivityFun"
+            android:label="@string/title_activity_explore"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.BeginActivity"
+            android:label="@string/title_activity_begin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ScholarLoginActivity"
+            android:label="@string/title_activity_begin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShareActivity"
+            android:label="@string/title_activity_share"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.RegisterSecondActivity"
+            android:label="@string/title_activity_register_second"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CommentsActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".toolsandlibraries.UploadImageService"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ReportProblemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DocumentsUploaderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activities.NoConnectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EditArticleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FirstActivity"
+            android:label="scholarnet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <receiver
+            android:name=".toolsandlibraries.SmsReader"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.ScholarnetDriveActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".beaPackage.DownloadDocumentIntentService"
+            android:exported="false" />
+        <service
+            android:name=".toolsandlibraries.DocumentUploaderService"
+            android:exported="false"/>
+    </application>
+
+</manifest>

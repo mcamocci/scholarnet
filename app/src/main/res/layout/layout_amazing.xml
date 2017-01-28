@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.AmazingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_amazing"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/detail_textview"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:text="maisha ni zawadi , future is for those who fights, future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights , future is for those who fights "
+                    android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:id="@+id/image_progress_load"
+                    android:orientation="vertical">
+                    <ProgressBar
+                        android:layout_marginTop="6dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/card_view1"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image_view_one"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/welcome"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/donut_progress1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_progress="00"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/card_view2"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image_view_two"
+                            android:src="@drawable/welcome"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/donut_progress2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_progress="00"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/card_view3"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image_view_three"
+                            android:src="@drawable/welcome"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/donut_progress3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_progress="00"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="4dp"
+                    android:id="@+id/card_view4"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        xmlns:custom="http://schemas.android.com/apk/res-auto">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/image_view_four"
+                            android:src="@drawable/welcome"
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/donut_progress4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_progress="00"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

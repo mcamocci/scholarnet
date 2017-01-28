@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="12dp"
+    android:background="@color/commondark"
+    android:layout_marginRight="16dp"
+    android:layout_height="48dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_height="48dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:id="@+id/linearLayout6"
+        android:background="@color/danger">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginTop="16dp"
+            android:id="@+id/extension"
+            android:textColor="@color/white"
+            android:text="PDF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Computer fundamentals"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView14"
+            android:fontFamily="sans-serif-light"
+            android:layout_height="wrap_content"
+            android:text="upload date"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/circle"
+            android:layout_marginTop="12dp"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

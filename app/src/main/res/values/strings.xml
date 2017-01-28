@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">scholarNet</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_password">Password (must)</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">REGISTER</string>
+    <string name="title_activity_explore">EXPLORER</string>
+    <string name="title_activity_begin">HOME</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_share">SHARE</string>
+
+    <string-array name="year">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="role">
+        <item>student</item>
+        <item>educator</item>
+    </string-array>
+    <string name="title_activity_article_post_view">ArticlePostViewActivity</string>
+    <string name="title_activity_register_second">RegisterSecondActivity</string>
+    <string name="title_activity_about_screen">AboutScreenActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+
+</resources>

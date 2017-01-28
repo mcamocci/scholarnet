@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="datacollect.k15.com.datacollect.MainActivity">
+
+    <item android:orderInCategory="101"
+        app:showAsAction="always"
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_action_exit"
+        android:actionViewClass="android.widget.ImageButton"
+        android:title="com">
+    </item>
+    <item android:orderInCategory="103"
+        app:showAsAction="never"
+        android:id="@+id/about"
+        android:actionViewClass="android.widget.ImageButton"
+        android:title="about">
+    </item>
+    <item android:orderInCategory="104"
+        app:showAsAction="never"
+        android:id="@+id/profile"
+        android:actionViewClass="android.widget.ImageButton"
+        android:title='account settings'>
+    </item>
+    <item android:orderInCategory="104"
+        app:showAsAction="never"
+        android:id="@+id/report"
+        android:actionViewClass="android.widget.ImageButton"
+        android:title='report problem'>
+    </item>
+
+</menu>

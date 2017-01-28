@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/article_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/progressBar4"
+                android:layout_marginTop="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="No article is available, to publish go to any module and write your article"
+                android:id="@+id/textView12"
+                android:layout_marginTop="28dp"
+                android:layout_below="@+id/textView17"
+                android:layout_centerHorizontal="true" />
+
+            <include
+                layout="@layout/retry_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17"
+                android:layout_marginTop="108dp"
+                android:layout_below="@+id/progressBar4"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
